@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link href="https://fonts.googleapis.com/css2?family=Ink+Free&display=swap"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2899d61536.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="feed.css" />
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Feedback</h1>
+      <form id="feedbackForm">
+        <div class="question">
+          <p style="font-weight: bolder;">Name:</p><input type="text" name="name" required >
+        </div>
+
+        <div class="question">
+          <p style="font-weight: bolder;">Email:</p><input type="email" name="email" required >
+        </div>
+
+        <div class="question">
+          <p style="font-weight: bolder;">Share your experience</p>
+          <div class="emoji-rating">
+            <label>
+              <input type="radio" name="rating" value="face">
+              <span class="font"><i class="fa-solid fa-face-laugh-beam"></i></span>
+            </label>
+            <label>
+              <input type="radio" name="rating" value="face">
+              <span class="font"><i class="fa-regular fa-face-smile-beam"></i></span>
+            </label>
+            <label>
+              <input type="radio" name="rating" value="face">
+              <span class="font"><i class="fa-solid fa-face-frown-open"></i></span>
+            </label>
+            <label>
+              <input type="radio" name="rating" value="😢" />
+              <span class="font"><i class="fa-solid fa-face-sad-cry"></i></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p style="font-weight: bolder;">Personal opinion and comments</p>
+          <textarea name="comments" rows="4"></textarea>
+        </div>
+
+        <div class="question">
+          <label>
+            <input type="checkbox" name="consent" required>
+            <p style="font-weight: bolder;">I accept the</p><a href="C:\Users\Sri\Desktop\Sri_SuvidhaProject/tnc.html" style="font-weight: bolder;">terms and conditions</a>
+          </label>
+        </div>
+
+        <button type="submit"  class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <script src="feed.js"></script>
+  </body>
+</html>
